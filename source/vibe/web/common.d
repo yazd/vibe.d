@@ -325,6 +325,7 @@ auto extractHTTPMethodAndName(alias Func)()
 	import vibe.internal.meta.uda : findFirstUDA;
 	import vibe.internal.meta.traits : isPropertySetter,
 		isPropertyGetter;
+	import vibe.http.rest : OverridenMethod, OverridenPath;
 	import std.algorithm : startsWith;
 	import std.typecons : Nullable;
 	
